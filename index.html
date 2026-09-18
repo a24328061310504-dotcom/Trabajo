@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donar Vida</title>
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-color: #b9dfc9;
+
+    color: #4b4650;
+
+    font-family: 'Lora', serif;
+
+    /* Líneas de cuaderno */
+    background-image:
+        linear-gradient(
+            #9fcfc3 1px,
+            transparent 1px
+        );
+
+    background-size: 100% 32px;
+
+    padding: 25px 0;
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.pagina {
+
+    width: 92%;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    background-color: #fffdf7;
+
+    border: 2px solid #6d6875;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+header {
+
+    background-color: #dff1ed;
+
+    border-bottom: 3px solid #6d6875;
+
+    padding: 18px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+}
+
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    min-width: 270px;
+}
+
+
+.logo-icon {
+
+    width: 62px;
+
+    height: 62px;
+
+    background-color: #8e78b7;
+
+    border-radius:
+        12px 12px 22px 22px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 35px;
+
+    position: relative;
+
+}
+
+
+/* CORAZÓN DEL LOGO */
+
+.logo-icon::after {
+
+    content: "♥";
+
+    position: absolute;
+
+    right: -6px;
+
+    top: -20px;
+
+    color: #ed7186;
+
+    font-size: 27px;
+
+}
+
+
+.logo h1 {
+
+    font-family: 'Dancing Script', cursive;
+
+    color: #20aaa8;
+
+    font-size: 44px;
+
+    line-height: 1;
+}
+
+
+.logo p {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 17px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================
+   MENÚ
+========================================= */
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    flex-wrap: wrap;
+
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #4d4952;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 20px;
+
+    padding: 8px 13px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover {
+
+    background-color: #b8dcd5;
+
+    color: #168f91;
+
+}
+
+
+/* =========================================
+   PRESENTACIÓN
+========================================= */
+
+.presentacion {
+
+    padding: 45px 50px 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+
+}
+
+
+/* TEXTO PRINCIPAL */
+
+.presentacion-texto {
+
+    padding: 10px;
+}
+
+
+.presentacion-texto h2 {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 65px;
+
+    color: #508dcc;
+
+    line-height: 1.1;
+
+    text-shadow:
+        2px 2px 0 #d4e3ef;
+
+}
+
+
+.presentacion-texto .subtitulo {
+
+    color: #20aaa8;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 29px;
+
+    margin-top: 12px;
+
+}
+
+
+.presentacion-texto p {
+
+    margin-top: 18px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   DIBUJO PRINCIPAL
+========================================= */
+
+.dibujo {
+
+    min-height: 285px;
+
+    background-color: #b9dfc9;
+
+    border: 4px solid #5b93d1;
+
+    border-radius: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* Decoraciones */
+
+.dibujo::before {
+
+    content: "♥";
+
+    position: absolute;
+
+    color: #ed7186;
+
+    font-size: 80px;
+
+    top: 15px;
+
+    left: 30px;
+
+    transform: rotate(-15deg);
+
+}
+
+
+.dibujo::after {
+
+    content: "♥";
+
+    position: absolute;
+
+    color: #ed7186;
+
+    font-size: 55px;
+
+    bottom: 20px;
+
+    right: 35px;
+
+    transform: rotate(15deg);
+
+}
+
+
+.dibujo-contenido {
+
+    font-size: 100px;
+
+    z-index: 1;
+
+}
+
+
+/* =========================================
+   FRASE DESTACADA
+========================================= */
+
+.frase {
+
+    margin: 0 50px 35px;
+
+    padding: 18px;
+
+    text-align: center;
+
+    background-color: #fff0c9;
+
+    border: 2px solid #d59f58;
+
+    border-radius: 10px;
+
+}
+
+
+.frase p {
+
+    font-family: 'Dancing Script', cursive;
+
+    color: #6d6261;
+
+    font-size: 31px;
+
+}
+
+
+/* =========================================
+   SECCIONES
+========================================= */
+
+.seccion {
+
+    padding: 20px 50px 45px;
+
+}
+
+
+.titulo-seccion {
+
+    text-align: center;
+
+    margin-bottom: 28px;
+
+}
+
+
+.titulo-seccion h2 {
+
+    font-family: 'Dancing Script', cursive;
+
+    color: #20aaa8;
+
+    font-size: 43px;
+
+}
+
+
+.titulo-seccion p {
+
+    margin-top: 5px;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.tarjetas {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.tarjeta {
+
+    min-height: 220px;
+
+    padding: 25px 20px;
+
+    border: 2px solid #77717b;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+}
+
+
+.tarjeta:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 5px 12px rgba(0,0,0,0.12);
+
+}
+
+
+/* COLORES */
+
+.tarjeta:nth-child(1) {
+
+    background-color: #dcebf6;
+
+}
+
+
+.tarjeta:nth-child(2) {
+
+    background-color: #f6dce4;
+
+}
+
+
+.tarjeta:nth-child(3) {
+
+    background-color: #e5ddf1;
+
+}
+
+
+.tarjeta .icono {
+
+    font-size: 50px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.tarjeta h3 {
+
+    font-family: 'Dancing Script', cursive;
+
+    color: #508dcc;
+
+    font-size: 31px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.tarjeta p {
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   ÓRGANOS
+========================================= */
+
+.organ-section {
+
+    padding: 10px 50px 45px;
+
+}
+
+
+.organ-box {
+
+    background-color: #eee5f5;
+
+    border: 3px solid #9277b5;
+
+    border-radius: 12px;
+
+    padding: 28px;
+
+}
+
+
+.organ-box h2 {
+
+    font-family: 'Dancing Script', cursive;
+
+    color: #7757a0;
+
+    font-size: 40px;
+
+    text-align: center;
+
+    margin-bottom: 12px;
+
+}
+
+
+.organ-box > p {
+
+    text-align: center;
+
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+
+}
+
+
+.lista-organos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    list-style: none;
+
+}
+
+
+.lista-organos li {
+
+    background-color: #fff9f1;
+
+    padding: 12px 10px;
+
+    border-radius: 9px;
+
+    border-left: 5px solid #20aaa8;
+
+    text-align: center;
+
+    font-size: 15px;
+
+}
+
+
+/* =========================================
+   CÓMO DONAR
+========================================= */
+
+.como-donar {
+
+    padding: 10px 50px 45px;
+
+}
+
+
+.pasos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.paso {
+
+    border: 2px solid #77717b;
+
+    border-radius: 8px;
+
+    padding: 20px 15px;
+
+    text-align: center;
+
+    background-color: #fffdf7;
+
+    position: relative;
+
+}
+
+
+.numero {
+
+    width: 38px;
+
+    height: 38px;
+
+    background-color: #ed9b68;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 0 auto 10px;
+
+    font-weight: bold;
+
+    color: white;
+
+}
+
+
+.paso h3 {
+
+    font-family: 'Dancing Script', cursive;
+
+    color: #20aaa8;
+
+    font-size: 27px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.paso p {
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contacto {
+
+    padding: 10px 50px 50px;
+
+    display: grid;
+
+    grid-template-columns:
+        0.9fr 1.1fr;
+
+    gap: 35px;
+
+    align-items: start;
+
+}
+
+
+.contacto-info {
+
+    padding: 10px;
+
+}
+
+
+.contacto-info h2 {
+
+    font-family: 'Dancing Script', cursive;
+
+    color: #20aaa8;
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contacto-info > p {
+
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+
+}
+
+
+.dato {
+
+    margin-bottom: 14px;
+
+    padding: 10px;
+
+    background-color: #dff1ed;
+
+    border-left: 5px solid #20aaa8;
+
+    border-radius: 7px;
+
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.formulario {
+
+    background-color: #f0e8f5;
+
+    border: 2px solid #9277b5;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+}
+
+
+.formulario h3 {
+
+    font-family: 'Dancing Script', cursive;
+
+    color: #7757a0;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+}
+
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 14px;
+
+    border: 2px solid #aaa0ae;
+
+    border-radius: 7px;
+
+    font-family: 'Lora', serif;
+
+    font-size: 14px;
+
+    background-color: #fffdf8;
+
+    outline: none;
+
+}
+
+
+input:focus,
+textarea:focus {
+
+    border-color: #20aaa8;
+
+}
+
+
+textarea {
+
+    height: 115px;
+
+    resize: none;
+
+}
+
+
+button {
+
+    border: none;
+
+    background-color: #20aaa8;
+
+    color: white;
+
+    padding: 11px 25px;
+
+    border-radius: 20px;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    background-color: #168f91;
+
+}
+
+
+/* =========================================
+   MENSAJE FINAL
+========================================= */
+
+.mensaje-final {
+
+    margin: 0 50px 40px;
+
+    padding: 20px;
+
+    background-color: #dcebf6;
+
+    border: 2px solid #5b93d1;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+}
+
+
+.mensaje-final p {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 29px;
+
+    color: #4e7eae;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    min-height: 100px;
+
+    background-color: #dff1ed;
+
+    border-top: 3px solid #6d6875;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 35px;
+
+}
+
+
+.marca {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.marca-icon {
+
+    color: #8e78b7;
+
+    font-size: 42px;
+
+}
+
+
+footer h3 {
+
+    color: #20aaa8;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 32px;
+
+}
+
+
+footer p {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 17px;
+
+}
+
+
+/* REDES */
+
+.redes {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.redes span {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 2px solid #77717b;
+
+    border-radius: 8px;
+
+    background-color: #fffdf8;
+
+    font-size: 21px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    header {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .presentacion {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .tarjetas {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .lista-organos {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .pasos {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .contacto {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 10px 0;
+
+    }
+
+    .pagina {
+
+        width: 96%;
+
+    }
+
+    header {
+
+        padding: 20px 15px;
+
+    }
+
+    .logo {
+
+        min-width: auto;
+
+        flex-direction: column;
+
+    }
+
+    .logo h1 {
+
+        font-size: 40px;
+
+    }
+
+    nav a {
+
+        font-size: 18px;
+
+    }
+
+    .presentacion {
+
+        padding: 30px 20px;
+
+    }
+
+    .presentacion-texto h2 {
+
+        font-size: 50px;
+
+    }
+
+    .dibujo {
+
+        min-height: 220px;
+
+    }
+
+    .seccion,
+    .organ-section,
+    .como-donar,
+    .contacto {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+
+    }
+
+    .frase,
+    .mensaje-final {
+
+        margin-left: 20px;
+
+        margin-right: 20px;
+
+    }
+
+    .lista-organos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .pasos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="pagina">
+
+
+    <!-- =====================================
+         ENCABEZADO
+    ====================================== -->
+
+    <header>
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                ♡
+            </div>
+
+            <div>
+
+                <h1>Donar Vida</h1>
+
+                <p>
+                    La decisión más grande, también salva vidas.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#donacion">
+                Sobre la donación
+            </a>
+
+            <a href="#como">
+                Cómo donar
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================
+         PRESENTACIÓN
+    ====================================== -->
+
+    <section id="inicio" class="presentacion">
+
+
+        <div class="presentacion-texto">
+
+            <h2>
+                ¿Qué es la donación de órganos?
+            </h2>
+
+            <div class="subtitulo">
+                Un acto de amor que puede salvar vidas.
+            </div>
+
+            <p>
+                La donación de órganos consiste en el acto médico voluntario de ceder órganos o tejidos sanos para salvar o mejorar la vida de personas que necesitan un trasplante. 
+                Este proceso puede realizarse en vida, por lo general entre familiares compatibles que ceden un riñón o parte del hígado, o bien tras el fallecimiento del donante en un hospital si la persona lo manifestó en vida o su familia lo autoriza. 
+                Mediante esta acción altruista es posible transferir estructuras vitales como el corazón, pulmones, hígado, riñones, páncreas e intestinos, además de diversos componentes médicos esenciales como córneas, piel, huesos, válvulas cardíacas y médula ósea.
+
+            </p>
+
+        </div>
+
+
+        <div class="dibujo">
+
+            <div class="dibujo-contenido">
+                🫶 ❤️
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         FRASE
+    ====================================== -->
+
+    <div class="frase">
+
+        <p>
+            "Donar es regalar una segunda oportunidad."
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================
+         SOBRE LA DONACIÓN
+    ====================================== -->
+
+    <section id="donacion" class="seccion">
+
+
+        <div class="titulo-seccion">
+
+            <h2>
+                ¿Por qué donar?
+            </h2>
+
+            <p>
+                Donar órganos es un acto de profunda solidaridad humana que salva la vida de hasta ocho personas y mejora la salud de más de setenta y cinco a través de la entrega de tejidos. 
+                Decidir ser donante ofrece una segunda oportunidad a miles de pacientes que padecen enfermedades terminales y que dependen por completo de un trasplante para sobrevivir, aliviando al mismo tiempo el sufrimiento y la incertidumbre de sus familias.
+            </p>
+
+        </div>
+
+
+        <div class="tarjetas">
+
+
+            <div class="tarjeta">
+
+                <div class="icono">
+                    📄
+                </div>
+
+                <h3>
+                    Infórmate
+                </h3>
+
+                <p>
+                    Conoce cómo funciona la donación
+                    de órganos y tejidos.
+                </p>
+
+            </div>
+
+
+
+            <div class="tarjeta">
+
+                <div class="icono">
+                    ❤️
+                </div>
+
+                <h3>
+                    Ayuda
+                </h3>
+
+                <p>
+                    Una donación puede representar una
+                    oportunidad para otra persona.
+                </p>
+
+            </div>
+
+
+
+            <div class="tarjeta">
+
+                <div class="icono">
+                    👨‍👩‍👧
+                </div>
+
+                <h3>
+                    Comunícalo
+                </h3>
+
+                <p>
+                    Habla con tu familia sobre tu decisión
+                    de ser donador.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         ÓRGANOS
+    ====================================== -->
+
+    <section class="organ-section">
+
+
+        <div class="organ-box">
+
+            <h2>
+                Órganos y tejidos que se pueden donar
+            </h2>
+
+            <p>
+
+                Un solo donante puede ayudar a varias
+                personas y mejorar la calidad de vida
+                de muchas familias.
+
+            </p>
+
+
+            <ul class="lista-organos">
+
+                <li>❤️ Corazón</li>
+
+                <li>🫁 Pulmones</li>
+
+                <li>🧠 Hígado</li>
+
+                <li>🫘 Riñones</li>
+
+                <li>🧪 Páncreas</li>
+
+                <li>🦴 Huesos</li>
+
+                <li>👁️ Córneas</li>
+
+                <li>🧬 Piel</li>
+
+            </ul>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         CÓMO DONAR
+    ====================================== -->
+
+    <section id="como" class="como-donar">
+
+
+        <div class="titulo-seccion">
+
+            <h2>
+                ¿Cómo donar?
+            </h2>
+
+            <p>
+                Es un proceso sencillo. Conoce estos pasos.
+            </p>
+
+        </div>
+
+
+        <div class="pasos">
+
+
+            <div class="paso">
+
+                <div class="numero">
+                    1
+                </div>
+
+                <h3>
+                    Infórmate
+                </h3>
+
+                <p>
+                    Aprende sobre la donación de órganos
+                    y tejidos.
+                </p>
+
+            </div>
+
+
+
+            <div class="paso">
+
+                <div class="numero">
+                    2
+                </div>
+
+                <h3>
+                    Regístrate
+                </h3>
+
+                <p>
+                    Regístrate como donador y expresa
+                    tu voluntad.
+                </p>
+
+            </div>
+
+
+
+            <div class="paso">
+
+                <div class="numero">
+                    3
+                </div>
+
+                <h3>
+                    Comunícalo
+                </h3>
+
+                <p>
+                    Comparte tu decisión con tu familia.
+                </p>
+
+            </div>
+
+
+
+            <div class="paso">
+
+                <div class="numero">
+                    4
+                </div>
+
+                <h3>
+                    Salva vidas
+                </h3>
+
+                <p>
+                    Tu decisión puede brindar esperanza
+                    a otras personas.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         MENSAJE
+    ====================================== -->
+
+    <div class="mensaje-final">
+
+        <p>
+            💗 Tu decisión también puede salvar vidas. 💗
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================
+         CONTACTO
+    ====================================== -->
+
+    <section id="contacto" class="contacto">
+
+
+        <div class="contacto-info">
+
+            <h2>
+                Contáctanos
+            </h2>
+
+            <p>
+
+                Si tienes dudas o necesitas más información
+                sobre la donación, puedes comunicarte con nosotros.
+
+            </p>
+
+
+            <div class="dato">
+
+                <strong>📞 Teléfono</strong>
+
+                <br>
+
+                800 123 4567
+
+            </div>
+
+
+            <div class="dato">
+
+                <strong>✉️ Correo electrónico</strong>
+
+                <br>
+
+                contacto@donarvida.mx
+
+            </div>
+
+
+            <div class="dato">
+
+                <strong>📍 Dirección</strong>
+
+                <br>
+
+                Ciudad de México
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FORMULARIO -->
+
+        <form class="formulario">
+
+            <h3>
+                Envíanos un mensaje
+            </h3>
+
+
+            <input
+                type="text"
+                placeholder="Nombre"
+            >
+
+
+            <input
+                type="email"
+                placeholder="Correo electrónico"
+            >
+
+
+            <textarea
+                placeholder="Mensaje"
+            ></textarea>
+
+
+            <button type="submit">
+
+                Enviar mensaje →
+
+            </button>
+
+        </form>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         PIE DE PÁGINA
+    ====================================== -->
+
+    <footer>
+
+
+        <div class="marca">
+
+            <div class="marca-icon">
+                ♡
+            </div>
+
+            <div>
+
+                <h3>
+                    Donar Vida
+                </h3>
+
+                <p>
+                    Juntos por más vidas.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="redes">
+
+            <span>
+                f
+            </span>
+
+            <span>
+                ◎
+            </span>
+
+            <span>
+                ▶
+            </span>
+
+        </div>
+
+
+    </footer>
+
+
+</div>
+
+
+</body>
+
+</html>
